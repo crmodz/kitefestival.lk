@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website with Card View and Animation</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header Section */
+    .header {
+      background-image: url('https://your-image-url.com'); /* Replace with the actual URL */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      width: 100%;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Card Container */
+    .card-container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    /* Card View */
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    /* Card Image */
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    /* Card Content */
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Card hover effect */
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Action Button */
+    .action-btn {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .action-btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    /* Animations for the Card View */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card {
+      animation: fadeIn 1s ease-out;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section with Image -->
+  <div class="header">
+    <h1>Old Kite Festivels Photos</h1>
+  </div>
+
+  <!-- Card Container -->
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="a.jpg" alt="Card Image 1">
+      <div class="card-content">
+        <h3>2017</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="b.jpg" alt="Card Image 2">
+      <div class="card-content">
+          <h3>2018</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="c.jpg" alt="Card Image 3">
+        <div class="card-content">
+          <h3>2019</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  
+     <div class="card">
+        <img src="d.jpg" alt="Card Image 3">
+        <div class="card-content">
+          <h3>2020</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div><br>
+
+     <div class="card">
+        <img src="e.jpg" alt="Card Image 3">
+        <div class="card-content">
+          <h3>2021</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+
+     <div class="card">
+        <img src="f.jpg" alt="Card Image 3">
+        <div class="card-content">
+          <h3>2022</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+
+     <div class="card">
+        <img src="g.jpg" alt="Card Image 3">
+        <div class="card-content">
+          <h3>2023</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+
+     <div class="card">
+        <img src="h.jpg" alt="Card Image 3">
+        <div class="card-content">
+          <h3>2024</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+
+     <div class="card">
+        <img src="i.jpg" alt="Card Image 3">
+        <div class="card-content">
+          <h3>2025</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
